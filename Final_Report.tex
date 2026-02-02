@@ -1,0 +1,254 @@
+\documentclass{sigchi}
+
+\pagenumbering{arabic}
+
+
+\usepackage{balance}      
+\usepackage{graphics}     
+\usepackage[T1]{fontenc}   
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{microtype}       
+\usepackage{ccicons}          
+\usepackage{todonotes}
+
+
+\def\plaintitle{Mapping Community Knowledge Digitally}
+\def\plainauthor{Ayrah Shoaib Khan, Moqeet Ahmed, Muhammaad Ibrahim}
+\def\emptyauthor{}
+\def\plainkeywords{Authors' choice; of terms; separated; by
+  semicolons; include commas, within terms only; this section is required.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  pdfdisplaydoctitle=true, % For Accessibility
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{3}
+\author{%
+  \alignauthor{Ayrah Shoaib Khan\\
+    \affaddr{Karachi, Pakistan}\\
+    \email{ayrahshoaib@gmail.com}}\\
+  \alignauthor{Moqeet Ahmed\\
+    \affaddr{Islamabad, Pakistan}\\
+    \email{24110130@lums.edu.pk}}\\
+  \alignauthor{Muhammaad Ibrahim\\
+    \affaddr{Lahore, Pakistan}\\
+    \email{24110220@lums.edu.pk}}\\
+}
+\maketitle
+
+\begin{abstract}
+  UPDATED---\today. Community knowledge, encompassing the lived experiences and insights of local residents, plays a crucial role in effective urban navigation. This study investigates the importance of community knowledge when navigating cities and explores the existence and effectiveness of digital platforms for storing and accessing such information. A qualitative methodology was employed, involving a comprehensive literature review and semi-structured interviews with diverse participants. Thematic analysis of the interview data revealed several key findings, including the need for better integration of navigation apps, the provision of practical and relevant navigation assistance, and the incorporation of up-to-date and community-driven information. The study highlights the significance of community knowledge in enriching the urban navigation experience and emphasizes the potential of digital platforms to facilitate access to this invaluable resource.
+
+\end{abstract}
+
+% Author Keywords
+\keywords{Community knowledge; Navigation; Digital platforms; Human-centered computing}
+
+\section{Introduction}
+The idea for this project stemmed from the notion that navigating urban environments is an integral part of daily life for many individuals, and the accessibility and reliability of community knowledge about a city can significantly enhance this experience. As cities continue to grow and evolve, the need for accurate and relevant information becomes increasingly important. Traditional navigation tools, while useful, often lack the local insights and contextual nuances that can make navigating a complex city like Lahore smoother, safer, and more engaging. 
+
+Our community knowledge is derived from the lived experiences and collective wisdom of local residents, which offers a unique perspective on a city's neighborhoods, landmarks, and cultural fabric. This knowledge encompasses not only practical information about routes and transportation but also insights into the social, cultural, and historical significance of various locations. By tapping into this rich source of information, individuals can gain a deeper understanding of the city they navigate, fostering a stronger sense of connection and belonging.
+
+In recent years, the proliferation of digital technologies has opened up new avenues for capturing, storing, and sharing community knowledge. Digital platforms, such as community-generated maps and online forums like Discord, Facebook groups, etc, have the potential to serve as repositories for this invaluable information, making it accessible to a wider audience. However, the extent to which these platforms effectively facilitate the exchange and utilization of community knowledge remains an area of inquiry. This research study aims to explore the importance of community knowledge when navigating a city and to investigate the existence and effectiveness of digital platforms for storing and accessing such information. By employing a qualitative methodology involving a comprehensive literature review and semi-structured interviews with diverse participants, the study seeks to uncover insights into user experiences with navigation apps and their exploration of local communities.
+
+The findings of this research have significant implications for the development of more effective and user-centric navigation tools, as well as for fostering stronger connections between individuals and the cities they inhabit. By highlighting the value of community knowledge and exploring the potential of digital platforms to facilitate its dissemination, this study contributes to ongoing efforts to enhance urban navigation experiences and promote a deeper understanding of the rich tapestry of local communities.
+
+\section{Related Work}
+\subsection{Community-Generated Maps}
+At its core, community mapping is a process by which people can explore and identify areas of their localities that are of great interest or significance to them. “Maps are therefore able to capture emotional and other abstract connections experienced by the mapmaker” \cite{Amsden:2005}. This may be of even more importance in countries where community knowledge is of utmost importance, particularly for the safety of individuals when systems are not trusted. Through the lived experiences of the people writing this paper, which were affirmed by other papers reviewed, we opine that every individual has a unique perspective to offer, which helps craft a database about a locality. In the words of Moll et al. \cite{Moll:1991}, each person contains “funds of knowledge” that can be tapped and expanded through community mapping as they draw on their own and others’ cultural, historical, and personal knowledge of their community places.
+
+Not only does this help provide a useful and interactive platform for the community to share their knowledge with others, but technology can also be used to enhance the community mapping experience by providing tools such as Google Maps, PowerPoint, and Prezi to create and display maps, reflections, and presentations \cite{Sclafani:2022}. 
+
+An example of a recent, successful project wherein queer communities across the world could utilize Google Maps to tell their story and connect with one another is “Queering the Map”. Users can place pins on a Google Maps-style interface, each attached to a personal story. These stories collectively weave a tapestry of queer life, digitally layering physical spaces with anonymous narratives. A study analyzes 1,941 posts pinned to Australia, exploring how Queering the Map reaffirms contemporary understandings of the physical-digital continuum and queers our conception of traces and places \cite{Robards:2020}. Another study on the same project paper delves into the emotional narratives shared on Queering the Map, highlighting love, loss, and belonging within a digital cartographic archive. It explores how this platform reshapes our understanding of queer experiences and community-making \cite{Kirby:2021}. 
+
+More examples of how community-generated maps can aid in local safety include a study that proposes a solution involving crowdsourcing to mark accessibility issues on digital maps. Users capture photos of city places that may pose barriers for people with reduced mobility. The data are then presented with heatmap visualizations to improve accessibility \cite{Prandi:2021}. Another highlights how digital maps can enhance road safety \cite{Blervaque:2006}.
+
+\subsection{Community-Generated Tech}
+The role of community-generated technology in fostering social communities, enhancing public participation, and driving innovation across various domains has garnered significant attention in recent years. This literature review explores the implications of community-generated technology in urban planning, transportation, civic engagement, online education, and sustainable development.
+
+\subsection{Community-Generated Technology and Urban Planning}
+Jaššo and Petríková \cite{Jasso:2019} delve into the concept of place attachment and social communities within the context of smart cities. They argue that technology plays a pivotal role in fostering a sense of belonging and community within urban environments. The authors suggest that smart city initiatives should prioritize creating a sense of place and fostering social communities to ensure their success. This perspective highlights the human aspect of smart cities, which is often overlooked in favor of technological advancements. By integrating community-generated technology into urban planning processes, cities can create more inclusive and livable spaces that cater to the needs and aspirations of their residents. In addition, Ghisleni \cite{Ghisleni:2024} discusses the convergence of artificial intelligence and urban planning, emphasizing the potential of AI in enhancing resource allocation, predicting trends, and engaging citizens. Bokolo Jr. \cite{Bokolo:2023} also highlights the role of community engagement in urban innovation toward the co-creation of smart, sustainable cities.
+
+\subsection{Community-Generated Technology and Public Participation}
+Tang and Waters \cite{Tang:2005} explore the role of the Internet and Geographic Information Systems (GIS) in public participation in transportation planning. They highlight the potential of these technologies to democratize the planning process by enabling greater public involvement. This study underscores the importance of community-generated technology in facilitating participatory decision-making processes. By leveraging community-generated technology, communities can have a more direct voice in shaping the transportation infrastructure and services that impact their daily lives. Galassi, Petríková, and Scacchi \cite{Galassi:2021} further explore the potential of digital technologies for community engagement in the decision-making process in smart cities
+
+\subsection{Community-Generated Technology and Civic Engagement}
+Longford's research surveys the Canadian landscape of community networking and civic participation. He discusses the decline in civic participation in many Western liberal democracies and the potential role of new information and communication technologies (ICTs) in reversing this trend. Longford suggests that virtual communities, facilitated by ICTs, could promote the development of social capital and revitalize democratic participation \cite{Longford}. This perspective is particularly relevant in the context of the digital age, where online communities are becoming increasingly prevalent. By harnessing the power of community-generated technology, virtual communities can foster civic engagement, encourage dialogue, and promote social cohesion. Cooper \cite{Cooper:2022} also discusses how technology can increase civic engagement, emphasizing the role of digital pedagogies in fostering involvement.
+
+\subsection{Community-Generated Technology and Online Education}
+Huang, Li, Huang, and Jiang \cite{Huang:2023} focus on the development and innovation of online education based on digital knowledge sharing communities. They emphasize the role of community-generated technology in transforming the educational landscape. The authors argue that digital knowledge sharing communities can enhance learning experiences and outcomes. This study provides valuable insights into the potential of community-generated technology in education. By leveraging digital communities, educational institutions can create more engaging and collaborative learning environments, fostering innovation and knowledge sharing. Smythe \cite{Smythe:2021} also discusses the role of new technologies in community-based adult learning, highlighting the potential of digital justice in subverting and exposing technologies implicated in online harms.
+
+\subsection{Community-Generated Technology and Sustainable Development}
+Vito \cite{Vito:2017} discusses how modern information technologies can enhance participatory approaches fostering sustainable development. He suggests that ICTs can empower communities to participate in decision-making processes related to sustainable development. This study highlights the potential of community-generated technology to contribute to sustainability efforts. By integrating community-generated technology into sustainable development initiatives, communities can actively participate in shaping sustainable solutions, ensuring that their unique needs and perspectives are considered.
+
+The World Bank \cite{WorldBank:2021} discusses how smart technology can be harnessed for sustainable development in developing countries. The report highlights the role of technology in improving planning, service delivery, governance, and effective urban management. BCG \cite{BCG:2021} also discusses how technology can help sustainability initiatives thrive, emphasizing the role of advanced technologies and ways of working to enable profitable solutions that also have a positive impact on net zero and other environmental, social, and governance goals.
+
+In all these examples we can see that community-generated technology has significant implications across various fields, including urban planning, transportation, civic participation, online education, and sustainable development. The reviewed literature highlights the potential of community-generated technology to foster social communities, democratize decision-making processes, enhance online education, and promote sustainable development. Future research should continue to explore the potential of community-generated technology to address societal challenges and drive positive change, while also addressing potential limitations and challenges associated with its implementation.
+
+\subsection{Community-Generated Knowledge in Data in South Asia and Africa}
+By widening our lens, we can see that ambitious individuals have made a number of attempts in South Asia to generate community-based data collection. A notable example would be The South East Asia Community Observatory Health and Demographic Surveillance System (SEACO HDSS). Established in Segamat, Malaysia, the primary objective of SEACO was to aid general health care by collecting quantitative and demographic data pertaining to health and diseases among different families \cite{Partap:2017}. Partnering with policymakers and Community Engagement Committees (CEC), SEACO collects and refines data from over 40,000 individuals through surveys. These surveys are collected both online and in person. With numerous demographic and health surveys, SEACO can access community data on death rates, medical histories, disease trends, incubation periods, and health-related statistics \cite{Partap:2017}.
+
+Additionally, it is interesting to note that despite the unavailability of formal resources or awareness platforms, there is a fair amount of knowledge about particular problems pertaining to health and security among individuals within South-East Asia. Nadeem, in his article, talks about how 78.6% of the participants in his survey across Pakistan did not hear the word Coronavirus before the occurrence of COVID-19, yet a considerable proportion of the population was aware of the ways the virus spread and the need for social distancing to curb the spread. Although the application was poor and many key aspects were missing, the results indicated major potential for capitalizing on spreading verifiable community knowledge \cite{Nadeem:2021}. 
+
+In a study on the awareness and precautions from cardiovascular diseases among South-Asian individuals conducted by Fowokan, he observed that individuals were well aware of the symptoms, causes, and diets that promoted CVD; however, there was a degree of dissonance observed between knowledge and its translation to appropriate behavior \cite{Fowokan:2020}. This could have been attributed to other important factors; however, the existing knowledge about otherwise complex diseases through community awareness is relevant to our scope of discussion.
+
+Einwiller, in her article about online content moderation, talks about how cyber security laws are very vague when it comes to harmful online communication (HOC). To fill the gap in HOC moderation, online content providers take it upon themselves to moderate hate speech or content through flagging, bans, or user removals from these platforms while taking aid from general followers \cite{Einwiller:2020}. It is interesting to observe that the general community recognizes societal issues on online platforms and can counter them through community collaboration in the absence of regulatory agencies.
+
+Purkayastha also highlights a key insight into women’s networks, which can mobilize together to form a synergetic relationship. In his book, he talks about female-led community groups spreading awareness and providing contraception to local women by collaborating with a local NGO in Kolondieba, a small town in Mali. This is interesting to observe because the concept of contraception, at that time and place, used to be a stigmatized topic and one the masses were clearly not in favor of \cite{Purkayastha:2004}.
+
+In an old but relevant research paper, Bardhan sheds light on rural networks and how water supply was a scarce resource. He mentions that rural communities would collaborate to provide individuals with less water supply on account of fairness and equity. The same behavior would be reciprocated later \cite{Bardhan:1993}. This is insightful because it depicts how, in the absence of formal networks, informal collaborations take place to benefit all key players.
+
+
+\section{Main Findings}
+The research question sought to comprehend the importance of community knowledge with respect to navigating a city and the availability of digital platforms that successfully store and access this knowledge. The findings show that community knowledge is critical in improving navigation tools by enhancing accuracy, practicality, and cultural relevance. However, there are significant gaps in integrating these insights into current navigation platforms, resulting in outdated and ineffectual data. Understanding user preferences and addressing these gaps is crucial, particularly in a culturally diverse context like Pakistan.
+
+\subsection{Tech Modes of Accessing Community Information}
+Participants emphasized the importance of social media and community platforms for accessing local insights. They preferred Facebook and Reddit groups because they provide real-time, localized information. One participant noted, "I usually trust the recommendations on Facebook groups more than other sources." However, these platforms often lack standardized moderation, leading to inconsistent and sometimes unreliable recommendations. Users also mentioned that recommendations from influencers and websites often have commercial motives, with one noting, "The recommendations feel more like ads than actual advice." 
+
+\subsection{What Do People Want}
+When navigating a city, people seek comprehensive and accurate insights into local culture and places. They want reliable sources of community knowledge to provide accurate, real-time information, whether through improved navigation apps or structured social platforms. One user said, "I need navigation tools that help me understand the culture and find places easily." However, the current unstructured nature of community knowledge, combined with commercial influences, leaves users with outdated and superficial recommendations. The analysis found that people often rely on community knowledge when navigating a city. One participant stated, "I often ask locals for recommendations when traveling," highlighting the strong dependence on insights from residents.
+
+\subsection{Outdated Information}
+Outdated information was a recurring theme impacting user experience. Many users noted that the information provided by navigation tools was not frequently updated, leading to inaccurate navigation. "Especially in Pakistan, it's [Google Maps] not that frequently updated," commented one user. An interviewee narrated how a large library near Peshawar is completely missing from Google Maps, though locals can easily guide travelers there. Similarly, when local festivals like Karachi Eat are held, the information is not reflected on navigation apps. This results in missed opportunities and potential traffic issues that could have been avoided with timely updates. The lack of real-time updates based on community-generated data hampers the accuracy and relevance of navigation tools.
+
+\subsection{Navigation Assistance and Safety}
+While navigation apps like Google Maps and Apple Maps offer multiple route options, users frequently express concerns about the relevance and practicality of these routes. One participant explained, "It shows me multiple routes, but not all are practical or safe." Roads with potholes or those prone to flooding are often not accounted for, and common routes through unsafe areas where muggings are common reflect a significant gap in navigation tools. This underscores the need for accurate and real-time community knowledge to ensure safer navigation, especially where safety is paramount. A local will guide a female explorer according to their knowledge of the safety of areas, but this nuance is lost on digital navigation apps. 
+
+\subsection{Community Engagement and Interaction}
+Community engagement plays a critical role in providing accurate and relevant local knowledge. Participants emphasized the need for structured and moderated platforms that effectively capture community insights. They trust locals' recommendations more than those from websites or influencers, but find it challenging to navigate the unstructured nature of community forums, such as Reddit forums or Facebook groups. As a result, there is a gap in the availability of standardized, community-driven insights that are easily accessible. One participant remarked, beautifully summarizing the gist of this paper, "The best recommendations come from locals, but finding them online is hard."
+
+\section{Conclusion}
+This research emphasizes the vital role of community knowledge in city navigation and identifies gaps in existing digital platforms. While community knowledge is crucial for accurate, real-time insights, the lack of standardized platforms diminishes the reliability and depth of available information. People trust local insights and often rely on community platforms such as Facebook and Reddit, but inconsistent recommendations result from a lack of moderation. Safety concerns also arise when digital navigation tools suggest impractical routes, highlighting the importance of real-time updates based on local insights. The inability of digital tools to capture key landmarks and local events leads to missed opportunities and navigational challenges, especially for those unfamiliar with the area. This study highlights the potential of community knowledge to improve navigation and stresses the need for structured platforms to effectively incorporate these insights. Future research should focus on standardizing community-generated data and enhancing navigation tools to better serve users in various contexts, such as Pakistan.
+
+\section{}
+\bibliographystyle{ACM-Reference-Format}
+\begin{thebibliography}{99}
+
+\bibitem{Partap:2017}
+Partap, U., Young, E. H., Allotey, P., Soyiri, I. N., Jahan, N., Komahan, K., Devarajan, N., Sandhu, M. S., \& Reidpath, D. D. (2017). HDSS Profile: The South East Asia Community Observatory Health and Demographic Surveillance System (SEACO HDSS). \textit{International Journal of Epidemiology, 46}(5), 1370-1371.
+
+\bibitem{Nadeem:2021}
+Nadeem, M., \& Khaliq, N. (2021). A study of community knowledge, attitudes, practices, and health in Pakistan during the COVID-19 pandemic. \textit{Journal of Community Psychology, 49}(5), 1249-1266. \url{https://doi.org/10.1002/jcop.22512}
+
+\bibitem{Fowokan:2020}
+Fowokan, A., Vincent, K., Punthakee, Z., Waddell, C., Rosin, M., Sran, N., \& Lear, S. A. (2020). Exploring Knowledge and Perspectives of South Asian Children and Their Parents Regarding Healthy Cardiovascular Behaviors: A Qualitative Analysis. \textit{Global Pediatric Health, 7}. \url{https://doi.org/10.1177/2333794X20924505}
+
+\bibitem{Einwiller:2020}
+Einwiller, S. A., \& Kim, S. (2020). How Online Content Providers Moderate User-Generated Content to Prevent Harmful Online Communication: An Analysis of Policies and Their Implementation. \textit{Policy \& Internet, 12}(2), 184-206. \url{https://doi.org/10.1002/poi3.239}
+
+\bibitem{Purkayastha:2004}
+Purkayastha, B., \& Subramaniam, M. (2004). The Power of Women's Informal Networks: Lessons in Social Change from South Asia and West Africa.
+
+\bibitem{Bardhan:1993}
+Bardhan, P. (1993). Analytics of the institutions of informal cooperation in rural development. \textit{World Development, 21}(4), 633-639. \url{https://doi.org/10.1016/0305-750X(93)90115-P}
+
+\bibitem{Moll:1992}
+Moll, L. C., Amanti, C., Neff, D., \& Gonzalez, N. (1992). Funds of Knowledge for Teaching: Using a Qualitative Approach to Connect Homes and Classrooms. \textit{Theory Into Practice, 31}(2), 132–141. \url{http://www.jstor.org/stable/1476399}
+
+\bibitem{Huang:2023}
+Huang, X., Li, H., Huang, L., \& Jiang, T. (2023). Research on the development and innovation of online education based on digital knowledge sharing community. \textit{BMC Psychology, 11}, 295.
+
+\bibitem{Jasso:2019}
+Jaššo, M., \& Petríková, D. (2019). Towards Creating Place Attachment and Social Communities in the Smart Cities. \textit{EAI/Springer Innovations in Communication and Computing}.
+
+\bibitem{Longford}
+Longford, G. (n.d.). Community Networking and Civic Participation: Surveying the Canadian Research Landscape. University of Toronto.
+
+\bibitem{Tang:2005}
+Tang, K. X., \& Waters, N. M. (2005). The internet, GIS and public participation in transportation planning. \textit{Progress in Planning, 64}(2), 61-110.
+
+\bibitem{Vito:2017}
+Vito, D. (2017). Enhancing Participation Through ICTs: How Modern Information Technologies Can Improve Participatory Approaches Fostering Sustainable Development. \textit{Research for Development}.
+
+\bibitem{Ghisleni:2024}
+Ghisleni, C. (2024). Artificial Intelligence and Urban Planning: Technology as a Tool for City Design.
+
+\bibitem{Bokolo:2023}
+Bokolo Anthony Jr. (2023). The Role of Community Engagement in Urban Innovation Towards the Co-Creation of Smart Sustainable Cities.
+
+\bibitem{Galassi:2021}
+Galassi, A., Petríková, L., \& Scacchi, M. (2021). Digital Technologies for Community Engagement in Decision-Making and Planning Process.
+
+\bibitem{Cooper:2022}
+Cooper, M. (2022). 5 Ways to Increase Civic Engagement with Current Technology.
+
+\bibitem{Smythe:2021}
+Smythe, S. (2021). Beyond Crisis, Toward Justice: New Technologies in Community-Based Adult Learning.
+
+\bibitem{WorldBank:2021}
+World Bank. (2021). Harnessing Smart Technology for Sustainable Development in Developing Countries.
+
+\bibitem{BCG:2021}
+BCG. (2021). How Technology Helps Sustainability Initiatives Thrive.
+
+\bibitem{Amsden:2005}
+Amsden, J., \& VanWynsberghe, R. (2005). Community mapping as a research tool with youth. \textit{Action Research, 3}(4), 357–381. \url{https://doi.org/10.1177/1476750305058487}
+
+\bibitem{Blervaque:2006}
+Blervaque, V., Mezger, K., Beuk, L., \& Loewenau, J. (2006). Adas Horizon — how digital maps can contribute to road safety. In \textit{Advanced Microsystems for Automotive Applications 2006} (pp. 427–436). \url{https://doi.org/10.1007/3-540-33410-6_30}
+
+\bibitem{Kirby:2021}
+Kirby, E., Watson, A., Churchill, B., Robards, B., \& LaRochelle, L. (2021). Queering the map: Stories of love, loss and (be)longing within a digital cartographic archive. \textit{Media, Culture \& Society, 43}(6), 1043–1060. \url{https://doi.org/10.1177/0163443720986005}
+
+\bibitem{Prandi:2021}
+Prandi, C., Barricelli, B. R., Mirri, S., \& Fogli, D. (2021). Accessible wayfinding and navigation: A systematic mapping study. \textit{Universal Access in the Information Society, 22}(1), 185–212. \url{https://doi.org/10.1007/s10209-021-00843-x}
+
+\bibitem{Robards:2020}
+Robards, B., Watson, A., Kirby, E., Churchill, B., \& LaRochelle, L. (2020). Queering the map: Physical traces and digital places of queer lives. \textit{AoIR Selected Papers of Internet Research}. \url{https://doi.org/10.5210/spir.v2020i0.11319}
+
+\bibitem{IEEE}
+IEEE Public Safety Technology Initiative. (n.d.). The role of mapping technology in public safety. \url{https://publicsafety.ieee.org/topics/the-role-of-mapping-technology-in-public-safety}
+
+\bibitem{Sclafani:2022}
+Sclafani, C. (2022). Community mapping 2.0: Using technology to raise community awareness. \textit{Networks: An Online Journal for Teacher Research, 23}(2). \url{https://doi.org/10.4148/2470-6353.1354}
+
+\end{thebibliography}
+
+% BALANCE COLUMNS
+\balance{}
+\end{document}
+
