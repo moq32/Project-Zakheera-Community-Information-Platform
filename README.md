@@ -23,7 +23,7 @@ This project investigates:
 
 The project combines **qualitative research** with **human-centered design**, culminating in a high-fidelity prototype for a community-powered navigation platform.
 
-Link to Prototype: https://www.figma.com/proto/tkIJlQlXhSZIDg4CCIYQa9/Prototype_Group3?node-id=2003-4027&starting-point-node-id=4018%3A1418&t=RVqQNS1FZVasymDH-1
+Link to Prototype: https://www.figma.com/proto/tkIJlQlXhSZIDg4CCIYQa9/Prototype_Group3?node-id=4018-1418&starting-point-node-id=4018%3A1418&t=ZTq5OXRDT9uEK7Zf-1
 
 ---
 
